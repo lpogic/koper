@@ -26,7 +26,7 @@ class Hash
     when Hash
       merge other
     else
-      super
+      raise NoMethodError.new "'+' operator for #{self.class} and #{other.class} is undefined"
     end
   end
 end
