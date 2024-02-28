@@ -1,0 +1,3 @@
+module Koper
+  VERSION = "0.0.1"
+end

@@ -1,0 +1,18 @@
+#{ gemspec.name }
+===
+
+#{ gemspec.summary }
+
+Installation
+---
+```
+gem install #{ gemspec.name }
+```
+
+Usage
+---
+#[sample/a0.rb]
+
+Authors
+---
+#{ gemspec.authors.zip(Array(gemspec.email)).map{ "- #{_1} (#{_2})" }.join("\n") }
