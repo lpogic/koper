@@ -1,0 +1,19 @@
+#{ gemspec.name }#{ " - #{ gemspec.summary }" if gemspec.summary }
+===
+
+#{ gemspec.description }
+
+Installation
+---
+```
+gem install #{ gemspec.name }
+```
+
+Usage
+---
+#{ sample.call "Complete example", "sample/a0.rb" }
+#{ sample.call "dig", "sample/a1.rb" }
+
+Authors
+---
+#{ gemspec.authors.zip(Array(gemspec.email)).map{ "- #{_1} (#{_2})" }.join("\n") }

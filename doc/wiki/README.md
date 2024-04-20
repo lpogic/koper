@@ -1,8 +1,15 @@
 Welcome to the _koper_ documentation home page!
 ===
 
+Installation
+---
+```
+gem install koper
+```
+
 Usage
 ---
+### 1. Complete example
 ```RUBY
 require 'koper'
 
@@ -21,4 +28,33 @@ p !hash            # => {1=>:a, 2=>:b}
 p hash + {c: 3}    # => {:a=>1, :b=>2, :c=>3}
 p array / 2        # => 5
 p array / (1..2)   # => [4, 5]
+
+p array >> 2       # => [3, 4]
 ```
+
+### 2. dig
+```RUBY
+require 'koper'
+
+hash = {
+  a: 1,
+  b: {
+    c: 2
+  },
+  d: [
+    5,
+    {
+      e: 5
+    }
+  ]
+}
+
+p hash/:b/:c    # => 2
+p hash/:x/:y    # => nil
+p hash/:d/1/:e  # => 5
+```
+
+
+Authors
+---
+- Łukasz Pomietło (oficjalnyadreslukasza@gmail.com)

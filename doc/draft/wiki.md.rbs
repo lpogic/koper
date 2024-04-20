@@ -1,7 +1,5 @@
-#{ gemspec.name }
+Welcome to the _#{ gemspec.name }_ documentation home page!
 ===
-
-#{ gemspec.summary }
 
 Installation
 ---
@@ -11,7 +9,8 @@ gem install #{ gemspec.name }
 
 Usage
 ---
-#[sample/a0.rb]
+#{ sample.call "Complete example", "sample/a0.rb" }
+#{ sample.call "dig", "sample/a1.rb" }
 
 Authors
 ---

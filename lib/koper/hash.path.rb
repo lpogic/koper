@@ -4,7 +4,7 @@ class Hash
     when Enumerable
       fetch_values *key
     else
-      fetch key
+      fetch key, nil
     end
   end
 
