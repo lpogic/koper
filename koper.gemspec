@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
   s.name        = "koper"
   s.version     = Koper::VERSION
   s.summary     = "Controversial standard class operator set"
-  s.description = <<-EOT
+  s.description = <<~EOT
     It extends some standard classes with operators whose mathematical and logical meaning is difficult to justify.
   EOT
   s.authors     = ["Łukasz Pomietło"]
